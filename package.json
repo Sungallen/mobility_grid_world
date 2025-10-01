@@ -1,13 +1,15 @@
 {
   "name": "mobility-grid",
-  "homepage": "https://sungallen.github.io/mobility_grid_world/",
+  "homepage": "https://Sungallen.github.io/mobility_grid_world/",
   "version": "0.1.0",
   "private": true,
   "scripts": {
     "dev": "next dev --turbopack",
     "build": "next build --turbopack",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "predeploy": "next build",
+    "deploy": "gh-pages -d out"
   },
   "dependencies": {
     "@radix-ui/react-label": "^2.1.7",
@@ -19,6 +21,7 @@
     "@radix-ui/react-tabs": "^1.1.13",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
+    "gh-pages": "^6.3.0",
     "lucide-react": "^0.544.0",
     "next": "15.5.4",
     "react": "19.1.0",
